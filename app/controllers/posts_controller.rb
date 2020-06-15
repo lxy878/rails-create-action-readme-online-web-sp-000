@@ -13,7 +13,7 @@ class PostsController < ApplicationController
 
   # add create method here
   def create
-    ost = Post.new
+    post = Post.new
     post.title = params[:title]
     post.description = params[:description]
     post.save
